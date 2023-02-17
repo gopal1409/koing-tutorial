@@ -17,3 +17,11 @@
   516  git status
   517  rm -rf .git
   518  git status
+####create our first commit and global varaible
+521  git config --global user.name "gopal das"
+  522  git config --global user.email "gopal1409@gmail.com"
+  523  ls
+  525  git init
+  526  git add calcy.py
+  527  git commit -m "intial commit"
+  528  git log
