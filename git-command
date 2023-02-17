@@ -37,3 +37,19 @@
    540  ssh-keygen -t rsa
   541  cat /c/Users/gopal/.ssh/id_rsa.pub
 
+####branching in git
+ 547  git branch
+  548  nano calcy.py
+  549  git add .
+  550  git commit -m "started calcy app"
+  551  git push origin master
+  552  git branch ai
+  553  git branch
+  554  git checkout ai
+  555  git branch
+  556  nano calcy.py
+  557  git status
+  558  git add .
+  559  git commit -m "added ai branch"
+  560  git push origin ai
+  561  git branch -a
