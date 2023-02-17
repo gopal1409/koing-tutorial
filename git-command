@@ -32,4 +32,8 @@
    ###inside that put all the files which you want to ignore. 
    ###to save press Ctrl X then press y and enter. 
   534  git status
+  
+  ####geenrate the key
+   540  ssh-keygen -t rsa
+  541  cat /c/Users/gopal/.ssh/id_rsa.pub
 
