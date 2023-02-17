@@ -25,3 +25,11 @@
   526  git add calcy.py
   527  git commit -m "intial commit"
   528  git log
+  
+  
+  ####ignore files
+   533  nano .gitignore
+   ###inside that put all the files which you want to ignore. 
+   ###to save press Ctrl X then press y and enter. 
+  534  git status
+
