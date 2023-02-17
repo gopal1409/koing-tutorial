@@ -53,3 +53,17 @@
   559  git commit -m "added ai branch"
   560  git push origin ai
   561  git branch -a
+#####branch merge in git
+563  cat calcy.py
+  564  git checkout master
+  565  cat calcy.py
+  566  git branch
+  567  git merge ai
+  568  cat calcy.py
+  569  git status
+  570  git add .
+  571  git commit -m "merge the content from ai"
+  572  git push origin master
+  573  git branch
+  574  git branch -d ai
+  575  git branch
