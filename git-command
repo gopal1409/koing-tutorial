@@ -67,3 +67,5 @@
   573  git branch
   574  git branch -d ai
   575  git branch
+###delete the remote branch
+git push origin -d ai
