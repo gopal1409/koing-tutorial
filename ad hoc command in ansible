@@ -5,3 +5,9 @@
    41  ansible all -m command -a "free -m"
    42  ansible all -m command -a "cpuinfo"
    43  ansible all -m command -a "cat /etc/passwd"
+   
+   ###3file modile
+   ansible ubuntu -m file -a "path=/tmp/x state=directory"
+   ssh root@ubuntu
+   ls -la /tmp/
+   exit
