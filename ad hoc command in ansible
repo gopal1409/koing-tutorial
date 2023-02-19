@@ -11,3 +11,10 @@
    ssh root@ubuntu
    ls -la /tmp/
    exit
+###change thje permission of file x
+  56  ansible ubuntu -m group -a "name=fred state=present"
+   57  ansible ubuntu -m user -a "name=fred group=fred state=present"
+   58  ansible ubuntu -m file -a "path=/tmp/x group=fred owner=fred"
+   ssh root@ubuntu
+   ls -la /tmp/
+   exit
