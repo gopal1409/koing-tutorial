@@ -1,0 +1,7 @@
+###all this are single line of command
+
+39  ansible all -m command -a uptime
+   40  ansible all -m command -a "df -h"
+   41  ansible all -m command -a "free -m"
+   42  ansible all -m command -a "cpuinfo"
+   43  ansible all -m command -a "cat /etc/passwd"
