@@ -8,3 +8,13 @@ docker container run --publish 81:80 --detach httpd
     ####deploy nginx container
     11  docker container run --publish 83:80 --detach nginx
    12  docker ps
+   ###3container run as a process id
+    16  docker ps
+   17  docker run --name mongo -d mongo
+   18  docker ps
+   19  docker top mongo
+   20  ps aux
+   21  docker top mongo
+   22  kill -9 4441
+   23  docker ps
+   24  docker ps -a
