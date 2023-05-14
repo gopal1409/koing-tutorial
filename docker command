@@ -1,2 +1,12 @@
 ###we will run our first container
 docker container run --publish 81:80 --detach httpd
+###deploy similar container
+ 6  docker container ls
+    7  docker images
+    8  docker container run --publish 82:80 --detach httpd
+    9  docker ps
+    ####deploy nginx container
+     6  docker container ls
+    7  docker images
+    8  docker container run --publish 82:80 --detach httpd
+    9  docker ps
