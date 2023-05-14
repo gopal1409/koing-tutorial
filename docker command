@@ -18,3 +18,16 @@ docker container run --publish 81:80 --detach httpd
    22  kill -9 4441
    23  docker ps
    24  docker ps -a
+   
+   ####how to access docker container
+   38  docker run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=True mysql
+   39  docker logs db
+      41  docker exec -it db bash
+      ####once you login inside the container
+      mysql -u root -p
+      ###copy the password from the log file and paste it and press enter
+      ###check the database
+      show database;
+      exit
+      exit
+      
