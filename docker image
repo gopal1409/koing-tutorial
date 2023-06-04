@@ -1,0 +1,20 @@
+3 git clone https://github.com/gopal1409/springboot-chat-app.git
+   4 cd .\springboot-chat-app\
+  10 mvn clean package
+  11 ls
+  12 cd .\target\
+  13 ls
+  14 cd ..
+  15 notepad dockerfile
+  ####inside the docker file
+FROM openjdk:16-alpine3.13
+VOLUME /tmp
+EXPOSE 8080
+ARG JAR_FILE=target/websocket-demo-0.0.1-SNAPSHOT.jar
+COPY ${JAR_FILE} websocket-demo.jar
+ENTRYPOINT ["java","-jar","websocket-demo.jar"]
+
+  16 docker build -t chatapp .
+  17 docker images
+  18 docker container run -d -p 8080:8080 chatapp
+  19 docker ps
