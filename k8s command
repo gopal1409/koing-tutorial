@@ -1,0 +1,7 @@
+ 13 kubectl run my-first-pod --image nginx
+  14 kubectl get pod
+  15 kubectl get pod
+  16 kubectl get pod
+  17 kubectl describe pod my-first-pod
+  18 kubectl get pod
+   20 kubectl expose pod my-first-pod --type=NodePort --port=80 --name=my-first-service
