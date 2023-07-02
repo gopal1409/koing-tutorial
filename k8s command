@@ -5,3 +5,13 @@
   17 kubectl describe pod my-first-pod
   18 kubectl get pod
    20 kubectl expose pod my-first-pod --type=NodePort --port=80 --name=my-first-service
+##3how to delete service
+
+  28 kubectl logs my-first-pod
+  29 kubectl exec -it my-first-pod -- /bin/bash
+  30 kubectl get pod my-first-pod -o yaml
+  31 kubectl get pod
+  32 kubectl delete pod my-first-pod
+  33 kubectl get svc
+  
+  35 kubectl delete svc my-first-service
