@@ -15,3 +15,21 @@
   33 kubectl get svc
   
   35 kubectl delete svc my-first-service
+###deployment
+ 38 kubectl create deployment my-first-deployment --image=apache2
+  
+  47 kubectl get deploy
+  48 kubectl describe deploy my-first-deploy
+  49 kubectl get deploy
+  50 kubectl get pod
+  51 kubectl describe pod my-first-deployment-644dd648cd-mdgcs
+  53 kubectl describe deploy my-first-deployment
+  54 kubectl set image deploy my-first-deployment apache2=httpd
+  55 kubectl get deploy
+  56 kubectl get deploy
+  57 kubectl get pod
+  58 kubectl delete pod my-first-deployment-74698fdc94-6bf4f
+  59 kubectl get pod
+  60 kubectl scale --replicas=5 deployment my-first-deployment
+  61 kubectl get deploy
+  62 kubectl get pod
