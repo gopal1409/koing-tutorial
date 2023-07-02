@@ -33,3 +33,12 @@
   60 kubectl scale --replicas=5 deployment my-first-deployment
   61 kubectl get deploy
   62 kubectl get pod
+
+###create service in k8s
+64 kubectl get pod
+  65 kubectl get pod -o wide
+  66 kubectl get deploy
+   69 kubectl expose deploy my-first-deployment --type=NodePort --port=80 --name=my-first-deploy-service
+  70 kubectl get svc
+  71 kubectl get pod -o wide
+  72 kubectl describe svc my-first-deploy-service
