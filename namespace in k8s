@@ -1,0 +1,16 @@
+ 513  kubectl get ns
+  514  kubectl get pod -n kube-system
+  515  kubectl create ns dev
+  516  kubectl get ns
+  517  kubectl describe ns dev
+  518  notepad resource.yml
+https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/quota-memory-cpu-namespace/
+  519  kubectl apply -f resource.yml --namespace=dev
+  520  kubectl describe ns dev
+  521  vi quota.yml
+  522  notepad quota.yml
+  523  kubectl apply -f quota.yml --namespace=dev
+  524  kubectl get pod
+  525  kubectl get pod -n dev
+  526  kubectl describe ns dev
+  527  history
