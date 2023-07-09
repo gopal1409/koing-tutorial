@@ -1,0 +1,19 @@
+ 529  kubectl create ns project-hamster
+  530  kubectl get ns
+  531  kubectl -n project-hamster create sa tom
+  532  kubectl get sa -n project-hamster tom
+  533  kubectl -n project-hamster create token tom
+  534  kubectl -n project-hamster create role -h
+ 
+  536  kubectl -n project-hamster create role  tomrole --verb=create --resource=secret,configmap
+  537  kubectl describe role tomrole -n project-hamster
+
+  539  kubectl -n project-hamster create rolebinding --help
+  540  kubectl -n project-hamster create rolebinding tombind --role=tomrole --serviceaccount=project-hamster:tom
+
+  542  kubectl -n project-hamster describe rolebinding tombind
+   546  kubectl -n project-hamster auth can-i create secret --as system:serviceaccount:project-hamster:tom
+  547  kubectl -n project-hamster auth can-i create configmap --as system:serviceaccount:project-hamster:tom
+  548  kubectl -n project-hamster auth can-i create pod --as system:serviceaccount:project-hamster:tom
+  549  kubectl -n project-hamster auth can-i create deployment --as system:serviceaccount:project-hamster:tom
+  550  history
